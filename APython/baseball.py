@@ -47,4 +47,3 @@ def ship():
         ship_print(position)  # call to function with parameter
         time.sleep(.1)
 
-ship()

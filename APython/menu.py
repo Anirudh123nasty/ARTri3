@@ -13,7 +13,9 @@ import matrix
 # 2. function references will be executed directly file.function()
 main_menu = [
     ["Baseball Animation", baseball.ship],
-    ["Swap", swap.swap],
+    ["Swap", swap.testSwap],
+    ["Matrix", matrix.tester]
+  
   
     # ["Listy", "listy.py"],
     # ["Loopy", loopy.main],

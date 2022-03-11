@@ -6,16 +6,7 @@ def write(matrix):
             print(matrix[i][order], end='')
         print()
 
-def swap_tester():
-    age1 = 1
-    age2 = 9
-    swap(age1, age2)
+def tester():
+  a = [[1,2,3],[4,5,6],[7,8,9]]
+  write(a)
 
-if __name__ == "__main__":
-    swap_tester()
-
-
-
-matrix = [[1,2,3],[4,5,6],[7,8,9]]
-
-write(matrix)
