@@ -4,6 +4,7 @@
 import baseball
 import swap
 import matrix
+import pattern
 
 
 
@@ -15,20 +16,13 @@ main_menu = [
     ["Baseball Animation", baseball.ship],
     ["Swap", swap.testSwap],
     ["Matrix", matrix.tester]
-  
-  
-    # ["Listy", "listy.py"],
-    # ["Loopy", loopy.main],
 ]
 
 # Submenu list of [Prompt, Action]
 # Works similarly to main_menu
-# sub_menu = [
-#     ["Factors", mathpy.factors],
-#     ["GCD", mathpy.gcd],
-#     ["LCM", mathpy.lcm],
-#     ["Primes", mathpy.primes],
-# ]
+sub_menu = [
+    ["Christmas Tree", pattern.testPattern],
+]
 
 # patterns_sub_menu = [
 #     ["Patterns", "patterns.py"],
@@ -48,19 +42,19 @@ banner = f"\n{border}\nPlease Select An Option\n{border}"
 def menu():
     title = "Function Menu" + banner
     menu_list = main_menu.copy()
-    # menu_list.append(["Math", submenu])
+    menu_list.append(["Pattern", submenu])
     # menu_list.append(["Patterns", patterns_submenu])
     buildMenu(title, menu_list)
 
 # def submenu
 # using sub menu list above:
 # sub_menu works similarly to menu()
-# def submenu():
-#     title = "Function Submenu" + banner
-#     buildMenu(title, sub_menu)
-# def patterns_submenu():
-#     title = "Function Submenu" + banner
-#     buildMenu(title, patterns_sub_menu)
+def submenu():
+    title = "Function Submenu" + banner
+    buildMenu(title, sub_menu)
+def patterns_submenu():
+    title = "Function Submenu" + banner
+    buildMenu(title, patterns_sub_menu)
 
 def buildMenu(banner, options):
     # header for menu
