@@ -221,6 +221,6 @@ def testPattern():
 * [Issue for adding submenu](https://github.com/Anirudh123nasty/ARTri3/projects/1#card-79051057)
 
 ## Replit links
-[Commit for pattern and submenu](https://github.com/Anirudh123nasty/ARTri3/commit/c0a574748665e199ec56430d703b4fa5a4bd6ab7)
-[Menu and Swap Function](https://github.com/Anirudh123nasty/ARTri3/commit/2419e85d1a58c545bb892076a7610489af0b57c1)
-[Replit](https://replit.com/@AnirudhR8/ARTri3#.replit)
+* [Commit for pattern and submenu](https://github.com/Anirudh123nasty/ARTri3/commit/c0a574748665e199ec56430d703b4fa5a4bd6ab7)
+* [Menu and Swap Function](https://github.com/Anirudh123nasty/ARTri3/commit/2419e85d1a58c545bb892076a7610489af0b57c1)
+* [Replit](https://replit.com/@AnirudhR8/ARTri3#.replit)
