@@ -207,6 +207,8 @@ if __name__ == "__main__":
 ```
 
 ## Github Links
-
+* [Issue for creating pattern](https://github.com/Anirudh123nasty/ARTri3/projects/1#card-79051060)
+* [Issue for finishing animation](https://github.com/Anirudh123nasty/ARTri3/projects/1#card-79051060)
+* [Issue for adding submenu](https://github.com/Anirudh123nasty/ARTri3/projects/1#card-79051057)
 
 ## Replit links
