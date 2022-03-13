@@ -229,3 +229,16 @@
 * Rogue access point
 * A wireless network that can give unauthorized access to secure networks
 
+# 5.1 Github Page Action- Beneficial and Harmful Effects of Computing
+## Come up with three of your own Beneficial and corresponding Harmful Effects of Computing.
+### A: A benefit is that computing helps families connect online no matter where they are in the world. A harmful effect is that this computing is costly since devices that access the internet isn't in everyone's budget. Another benefit is that people can create online art and make a living off of it, like photo editing or being editors for YouTubers. A harmful effect is that people might get sucked up in the online world and not attention to their surroundings and real life. A third beneficial effect is that people can create programs to spread information throughout the world in times of crisis, like with the Russia scenario right now. A drawback is that the internet can be regulated by the government, creating a false narrative of the events taking place.
+## Talk about dopamine issues above. Real? Parent conspiracy? Anything that is impacting your personal study and success in High School?
+### A: I've never personally experienced dopamine issues relating to playing too many video games or being online to much. Even in my junior year, I enjoyed the virtual environment since it allowed to much more flexibility in my schedule. However, I can see why some video games might draw players too close to fantasy, making them forget their real life goals.
+
+# 5.2 Github Page Action- Digital Divide
+## How does someone empower themself in a digital world?
+### A: A person empowers themself in the digital world by making themselves aware of all the possibilities around them regarding the internet. Even if they don't have the resources to access the internet, they learn more about what they can achieve with the resources they have, and stays curious. We can help these students without resources by creating websites with quick and easy tutorials for how they can make use of what they have. 
+## How does someone that is empowered help someone that is not empowered? Describe something you could do at Del Norte HS.
+### A: We can create resources that aids them in their ability to make use of the internet. One thing I could do here is create a club where all students use their resources to help lower income students under the internet.
+## Is paper or red tape blocking digital empowerment? Are there such barriers at Del Norte? Elsewhere?
+### A: There isn't red tape blocking digital empowerment, rather access to the same resources. Students without computers at home won't be able to understand and work on the content the same way other students might, leaving them with lower grades and limiting understanding of the material.
