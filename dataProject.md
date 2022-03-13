@@ -89,7 +89,7 @@ def testSwap():
   x, y = swap(firstAge, secondAge)
   print(x, y)
   ```
-# Code for menu
+# Code for menu and submenu
 ```python
 # menuy.py - function style menu
 # Imports typically listed at top
@@ -97,6 +97,7 @@ def testSwap():
 import baseball
 import swap
 import matrix
+import pattern
 
 
 
@@ -108,20 +109,13 @@ main_menu = [
     ["Baseball Animation", baseball.ship],
     ["Swap", swap.testSwap],
     ["Matrix", matrix.tester]
-  
-  
-    # ["Listy", "listy.py"],
-    # ["Loopy", loopy.main],
 ]
 
 # Submenu list of [Prompt, Action]
 # Works similarly to main_menu
-# sub_menu = [
-#     ["Factors", mathpy.factors],
-#     ["GCD", mathpy.gcd],
-#     ["LCM", mathpy.lcm],
-#     ["Primes", mathpy.primes],
-# ]
+sub_menu = [
+    ["Christmas Tree", pattern.testPattern],
+]
 
 # patterns_sub_menu = [
 #     ["Patterns", "patterns.py"],
@@ -141,19 +135,19 @@ banner = f"\n{border}\nPlease Select An Option\n{border}"
 def menu():
     title = "Function Menu" + banner
     menu_list = main_menu.copy()
-    # menu_list.append(["Math", submenu])
+    menu_list.append(["Pattern", submenu])
     # menu_list.append(["Patterns", patterns_submenu])
     buildMenu(title, menu_list)
 
 # def submenu
 # using sub menu list above:
 # sub_menu works similarly to menu()
-# def submenu():
-#     title = "Function Submenu" + banner
-#     buildMenu(title, sub_menu)
-# def patterns_submenu():
-#     title = "Function Submenu" + banner
-#     buildMenu(title, patterns_sub_menu)
+def submenu():
+    title = "Function Submenu" + banner
+    buildMenu(title, sub_menu)
+def patterns_submenu():
+    title = "Function Submenu" + banner
+    buildMenu(title, patterns_sub_menu)
 
 def buildMenu(banner, options):
     # header for menu
@@ -204,6 +198,21 @@ def buildMenu(banner, options):
 if __name__ == "__main__":
     menu()
     #menuc()
+
+```
+# Code for Christmas Tree Pattern
+```python
+def christmaspattern(n):
+    for i in range(n):
+        for c in range(n-i):
+            print(' ', end=' ')
+        for c in range(2*i+1):
+            print('*',end=' ')
+        print()
+
+def testPattern():
+  row = int(input('How many rows: '))
+  christmaspattern(row)
 ```
 
 ## Github Links
@@ -212,3 +221,6 @@ if __name__ == "__main__":
 * [Issue for adding submenu](https://github.com/Anirudh123nasty/ARTri3/projects/1#card-79051057)
 
 ## Replit links
+[Commit for pattern and submenu](https://github.com/Anirudh123nasty/ARTri3/commit/c0a574748665e199ec56430d703b4fa5a4bd6ab7)
+[Menu and Swap Function](https://github.com/Anirudh123nasty/ARTri3/commit/2419e85d1a58c545bb892076a7610489af0b57c1)
+[Replit](https://replit.com/@AnirudhR8/ARTri3#.replit)
