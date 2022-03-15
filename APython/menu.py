@@ -5,6 +5,7 @@ import baseball
 import swap
 import matrix
 import pattern
+import TT1
 
 
 
@@ -15,7 +16,8 @@ import pattern
 main_menu = [
     ["Baseball Animation", baseball.ship],
     ["Swap", swap.testSwap],
-    ["Matrix", matrix.tester]
+    ["Matrix", matrix.tester],
+    ["TT1", TT1.TT1tester],
 ]
 
 # Submenu list of [Prompt, Action]
