@@ -17,7 +17,7 @@ InfoDb.append({
                "Height": "6.022 * 10^23 feet",  
                "Dominance": "Right Handed",  
                "Preferred surface": "Mort's Classroom",  
-               "Owns_Trophies":["A","B","C"] 
+               "Owns_Trophies":["0 Keys to Your Mom's House","Possibly 1 CIF Championship","0 Maidens"] 
               })  
 
 def print_data(n):

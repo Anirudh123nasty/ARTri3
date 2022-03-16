@@ -6,6 +6,7 @@ import swap
 import matrix
 import pattern
 import TT1
+import fibo
 
 
 
@@ -18,7 +19,9 @@ main_menu = [
     ["Swap", swap.testSwap],
     ["Matrix", matrix.tester],
     ["TT1", TT1.TT1tester],
+    ["Fibonacci", fibo.fibotester],
 ]
+
 
 # Submenu list of [Prompt, Action]
 # Works similarly to main_menu
