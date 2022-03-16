@@ -13,11 +13,12 @@ def fibo(n):
         return fibo(n-1) + fibo(n-2)
 
 
-
-
 def fibotester():
-  n = int(input("Enter the term number: "))
-  for i in range(n):
-          print(fibo(i))
+  try:
+    n = int(input("Enter the term number: "))
+    for i in range(n):
+            print(fibo(i))
+  except: 
+    print("Please enter valid input!")
 
 # fibotester()
