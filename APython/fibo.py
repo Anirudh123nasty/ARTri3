@@ -17,7 +17,8 @@ def fibotester():
       print("Please enter positive number!")
     else: 
       for i in range(n):
-                print(fibo(i))
+                print(fibo(i), end=', ')
+      print ("are the fibonacci terms!")
   except: 
     print("Please enter number!")
 
