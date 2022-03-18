@@ -6,7 +6,7 @@ def christmaspattern(n):
             print('*',end=' ')
         print()
     for i in range(int(n/2)):
-        for c in range(n):
+        for c in range(int(n-1)):
             print(' ', end=' ')
         for c in range (int(n/2)-1):
             print ('*',end=' ')
