@@ -242,3 +242,15 @@
 ### A: We can create resources that aids them in their ability to make use of the internet. One thing I could do here is create a club where all students use their resources to help lower income students under the internet.
 ## Is paper or red tape blocking digital empowerment? Are there such barriers at Del Norte? Elsewhere?
 ### A: There isn't red tape blocking digital empowerment, rather access to the same resources. Students without computers at home won't be able to understand and work on the content the same way other students might, leaving them with lower grades and limiting understanding of the material.
+
+# 5.3 Github Page Action- Computer Bias
+## Does the owner of the computer think this was intentional? If yes or no, justify your conclusion. How do you think this happened? Is this harmful? Was it intended to be harmful or exclude? Should it be corrected? What would you or should you do to produce a better outcome?.
+### A: The owner of the computer does not think it was intentional, yes there would be serious reprocussions if it were inteneded to exlude people with darker skin tones. I think this happened since in testing they might have only used people with lighter skin tones. This is harmful since it untentionally excludes specific races from using their product's features, which makes the company look quite bad. It should definitely be corrected by testing face ID on different skin colors of test subjects.
+
+
+# 5.4 Github Page Action- Crowdsourcing
+## CompSci has 150 principles students. Describe a crowdsource idea and how you might initiate it in our environment?
+### A: A crowdsourcing idea is to have students share out their experiences from the last two trimesters, and then touch upon where they struggled. Especially in this class, I feel that there is a big disconnect between high performing and low performing students, and bridging the gap could be done by going over where they struggled. This could be initiated by creating an editable web page like wikepedia where people would list concerns.
+## What about Del Norte crowdsourcing? Could your final project be better with crowdsourcing?
+### A: Del Norte crowdsourcing can be implemented by setting up a webpage where all users can edit and leave comments on what they want to see. The final project would be better since we would have a large sample size telling us exactly where to improve before our sponser sees our page.
+
