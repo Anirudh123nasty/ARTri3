@@ -7,6 +7,7 @@ import matrix
 import pattern
 import TT1
 import fibo
+import factorial
 
 
 
@@ -20,6 +21,7 @@ main_menu = [
     ["Matrix", matrix.tester],
     ["TT1", TT1.TT1tester],
     ["Fibonacci", fibo.fibotester],
+    ["Factorial", factorial.factorialtester],
 ]
 
 
