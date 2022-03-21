@@ -1,4 +1,5 @@
-
+#creates set conditions that values with eventually become
+#values get subtracted until they are 0, 1, or 2
 def fibo(n):
     if n == 0:
         return 0
@@ -9,7 +10,7 @@ def fibo(n):
     else:
         return fibo(n-1) + fibo(n-2)
 
-
+#print end statement, checks for entering letters or negative numbers with try accept and if else
 def fibotester():
   try:
     n = int(input("Enter the term number: "))
