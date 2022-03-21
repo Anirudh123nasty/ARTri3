@@ -11,6 +11,8 @@ def fibo(n):
         return fibo(n-1) + fibo(n-2)
 
 #print end statement, checks for entering letters or negative numbers with try accept and if else
+# try accept covers entering letters
+#if else covers positive terms and in else prints all fibo terms
 def fibotester():
   try:
     n = int(input("Enter the term number: "))
