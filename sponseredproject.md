@@ -1,3 +1,5 @@
+{% include navigation.html %}
+
 # About me
 ### I've worked coded in CSP for two trimesters, and am now working to understand how to code in python. I enjoy messing with code, and collaborating with others to get difficult tasks completed!
 # Idea
