@@ -1,7 +1,7 @@
 # Hack 1: InfoDB lists.  Build your own/personalized InfoDb with a list length > 3,  create list within a list as illustrated with Owns_Cars
 
 InfoDb = []
-# List with dictionary records placed in a list  
+# List with length greater than 3; placed in a personalized list about tennis attributes in the player
 InfoDb.append({  
                "Name": "Sahil Lamar Jackson Jr.",  
                "UTR": "6.9",  
@@ -40,7 +40,7 @@ def while_loop(n):
     while n < len(InfoDb):
         print_data(n)
         n += 1
-    return
+    return4
 
 # recursion simulates loop incrementing on each call (n + 1) until exit condition is met
 def recursive_loop(n):
@@ -51,6 +51,7 @@ def recursive_loop(n):
 
 
 # Hack 3: Fibonacci.  Write a recursive program to create a fibonacci sequence including error handling for invalid input
+#this is in fibo.py- it is recursive since it calls the function again and again to run and print all the values
   
 def TT1tester():
     print("For loop")
