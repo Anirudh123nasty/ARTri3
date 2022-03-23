@@ -1,13 +1,13 @@
 # menuy.py - function style menu
 # Imports typically listed at top
 # each import enables us to use logic that has been abstracted to other files and folders
-import baseball
-import swap
-import matrix
-import pattern
-import TT1
-import fibo
-import factorial
+from TT0 import baseball
+from TT0 import swap
+from TT0 import matrix
+from TT0 import pattern
+from TT1 import fibo
+from TT1 import TT1
+from APython import factorial
 
 
 
