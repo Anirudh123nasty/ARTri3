@@ -40,7 +40,7 @@ def while_loop(n):
     while n < len(InfoDb):
         print_data(n)
         n += 1
-    return4
+    return
 
 # recursion simulates loop incrementing on each call (n + 1) until exit condition is met
 def recursive_loop(n):
