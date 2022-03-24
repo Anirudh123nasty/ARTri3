@@ -24,13 +24,31 @@ main_menu = [
     ["Factorial", factorial.factorialtester],
 ]
 
+main_menu = []
+
+
 
 # Submenu list of [Prompt, Action]
 # Works similarly to main_menu
-sub_menu = [
+# sub_menu = [
+#     ["Christmas Tree", pattern.testPattern],
+# ]
+
+math_sub_menu = [
+    ["Matrix", matrix.tester],
+    ["Fibonacci", fibo.fibotester],
+    ["Factorial", factorial.factorialtester],
+]
+
+adventure_sub_menu = [
+    ["Baseball Animation", baseball.ship],
+    ["Swap", swap.testSwap],
     ["Christmas Tree", pattern.testPattern],
 ]
 
+data_sub_menu = [
+    ["Loops", TT1.TT1tester],
+]
 # patterns_sub_menu = [
 #     ["Patterns", "patterns.py"],
 #     ["PreFuncy", "wipy/prefuncy.py"],
@@ -49,19 +67,29 @@ banner = f"\n{border}\nPlease Select An Option\n{border}"
 def menu():
     title = "Function Menu" + banner
     menu_list = main_menu.copy()
-    menu_list.append(["Pattern", submenu])
+    menu_list.append(["Math", math_submenu])
+    menu_list.append(["Adventure", adventure_submenu])
+    menu_list.append(["Data", data_submenu])
+
+  
+
     # menu_list.append(["Patterns", patterns_submenu])
     buildMenu(title, menu_list)
 
 # def submenu
 # using sub menu list above:
 # sub_menu works similarly to menu()
-def submenu():
+def math_submenu():
     title = "Function Submenu" + banner
-    buildMenu(title, sub_menu)
-def patterns_submenu():
+    buildMenu(title, math_sub_menu)
+def adventure_submenu():
     title = "Function Submenu" + banner
-    buildMenu(title, patterns_sub_menu)
+    buildMenu(title, adventure_sub_menu)
+
+def data_submenu():
+    title = "Function Submenu" + banner
+    buildMenu(title, data_sub_menu)
+  
 
 def buildMenu(banner, options):
     # header for menu
