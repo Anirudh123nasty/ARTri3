@@ -8,6 +8,7 @@ from TT0 import pattern
 from TT1 import fibo
 from TT1 import TT1
 from APython import factorial
+from TT2 import classy
 
 
 
@@ -38,6 +39,7 @@ math_sub_menu = [
     ["Matrix", matrix.tester],
     ["Fibonacci", fibo.fibotester],
     ["Factorial", factorial.factorialtester],
+    ["Factorial with class", classy. facttester],
 ]
 
 adventure_sub_menu = [
