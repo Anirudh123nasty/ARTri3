@@ -4,10 +4,10 @@ class OddorEven:
   def __call__(self, n):
     if(n % 2 == 0):
       print(n)
-      print("which is an even number!")
+      print("which is even!")
     else:
       print(n)
-      print("which is an odd number!")
+      print("which is odd!")
 
 def OddorEvenfinder():
   print("Odd or Even")

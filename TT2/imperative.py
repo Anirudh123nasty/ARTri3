@@ -1,4 +1,4 @@
-#this is the imperative form of determining if a function is even or odd (no function)
+#this is the imperative form of determining if a function is even or odd 
 def imperative():
   num = int(input('Enter a number: '))
   
