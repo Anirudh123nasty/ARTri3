@@ -6,7 +6,7 @@ from TT0 import swap
 from TT0 import matrix
 from TT0 import pattern
 from TT1 import fibo
-from TT1 import TT1
+from TT1 import loop
 from APython import factorial
 from TT2 import classy
 
@@ -15,15 +15,15 @@ from TT2 import classy
 # Main list of [Prompts, Actions]
 # Two styles are supported to execute abstracted logic
 # 1. file names will be run by exec(open("filename.py").read())
-# 2. function references will be executed directly file.function()
-main_menu = [
-    ["Baseball Animation", baseball.ship],
-    ["Swap", swap.testSwap],
-    ["Matrix", matrix.tester],
-    ["TT1", TT1.TT1tester],
-    ["Fibonacci", fibo.fibotester],
-    ["Factorial", factorial.factorialtester],
-]
+# # 2. function references will be executed directly file.function()
+# main_menu = [
+#     ["Baseball Animation", baseball.ship],
+#     ["Swap", swap.testSwap],
+#     ["Matrix", matrix.tester],
+#     ["Loop", loop.looptester],
+#     ["Fibonacci", fibo.fibotester],
+#     ["Factorial", factorial.factorialtester],
+# ]
 
 main_menu = []
 
@@ -49,7 +49,7 @@ adventure_sub_menu = [
 ]
 
 data_sub_menu = [
-    ["Loops", TT1.TT1tester],
+    ["Loops", loop.looptester],
 ]
 # patterns_sub_menu = [
 #     ["Patterns", "patterns.py"],

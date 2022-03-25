@@ -53,7 +53,7 @@ def recursive_loop(n):
 # Hack 3: Fibonacci.  Write a recursive program to create a fibonacci sequence including error handling for invalid input
 #this is in fibo.py- it is recursive since it calls the function again and again to run and print all the values
   
-def TT1tester():
+def looptester():
     print("For loop")
     for_loop()
     print("While loop")
