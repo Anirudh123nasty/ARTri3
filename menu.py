@@ -9,6 +9,8 @@ from TT1 import fibo
 from TT1 import loop
 from APython import factorial
 from TT2 import classy
+from TT2 import imperative
+from TT2 import OOP
 
 
 
@@ -39,7 +41,9 @@ math_sub_menu = [
     ["Matrix", matrix.tester],
     ["Fibonacci", fibo.fibotester],
     ["Factorial", factorial.factorialtester],
-    ["Factorial with class", classy. facttester],
+    ["Factorial with class", classy.facttester],
+    ["Odd or Even (Imperative Method)", imperative.imperative],
+    ["Odd or Even (OOP Method)", OOP.OddorEvenfinder],
 ]
 
 adventure_sub_menu = [
