@@ -1,5 +1,5 @@
 {% include navigation.html %}
-# Week 1
+# Week 0
 
 # Data Structures Project
 
@@ -215,7 +215,7 @@ def testPattern():
   christmaspattern(row)
 ```
 
-# Week 2
+# Week 1
 
 # Data Structures Project
 
@@ -336,12 +336,71 @@ def testPattern():
   row = int(input('How many rows: '))
   christmaspattern(row)
 ```
-## Github Links
-* [Issue for creating pattern](https://github.com/Anirudh123nasty/ARTri3/projects/1#card-79051060)
-* [Issue for finishing animation](https://github.com/Anirudh123nasty/ARTri3/projects/1#card-79051060)
-* [Issue for adding submenu](https://github.com/Anirudh123nasty/ARTri3/projects/1#card-79051057)
+# Week 2
+
+# Data Structures Project
+
+## Code snippets
+
+### Code for Factorial with class and call
+``` python
+class Factorial:
+    def __init__(self):
+        self.factSeq = [1]
+    def __call__(self, n):
+        if n < len(self.factSeq):
+            return self.factSeq[n]
+        else:
+            # Compute the requested Fibonacci number
+            fact_number = n * self(n - 1) # two recursive calls to self (__call__(self, n))
+            self.factSeq.append(fact_number) # builds list, with most nested of the calculations 1st... may hurt your head
+        return self.factSeq[n]
+def facttester():
+  fact_of = Factorial() # object instantiation and run __init__ method
+  l = int(input('What number: '))
+  print(fact_of(l)) # object running __call__ method
+```
+### Code for Own Math Function Imperative
+```python
+#this is the imperative form of determining if a function is even or odd 
+def imperative():
+  num = int(input('Enter a number: '))
+  
+  if(num % 2 == 0):
+    print(num)
+    print("is an even number")
+  else:
+    print(num)
+    print("is an odd number")
+```
+### Code for Own Math Function OOP
+```python
+class OddorEven:
+  def __init__(self):
+    print("The number is", end=" ")
+  def __call__(self, n):
+    if(n % 2 == 0):
+      print(n)
+      print("which is even!")
+    else:
+      print(n)
+      print("which is odd!")
+
+def OddorEvenfinder():
+  print("Odd or Even")
+  n = int(input("Enter any Number to determine if it is even or odd: "))
+  oddoreven = OddorEven()
+  oddoreven(n)
+
+# OddorEvenfinder()
+```
+## Github Links 
+* [Issue for organizing files](https://github.com/Anirudh123nasty/ARTri3/projects/1#card-79745861)
+* [Issue for factorial with class](https://github.com/Anirudh123nasty/ARTri3/projects/1#card-79745845)
+* [Issue for individual math function (OOP and Imperative)](https://github.com/Anirudh123nasty/ARTri3/projects/1#card-79745832)
 
 ## Replit links
-* [Commit for pattern and submenu](https://github.com/Anirudh123nasty/ARTri3/commit/c0a574748665e199ec56430d703b4fa5a4bd6ab7)
-* [Menu and Swap Function](https://github.com/Anirudh123nasty/ARTri3/commit/2419e85d1a58c545bb892076a7610489af0b57c1)
+* [Commit for math function](https://github.com/Anirudh123nasty/ARTri3/commit/4336f4aa990607a14b0d2a7f47c79885336e9c01)
+* [Commit for organization](https://github.com/Anirudh123nasty/ARTri3/commit/f760793147b1d4753c90b40061f2a56f52d8ca6b)
+* [Commit for factorial](https://github.com/Anirudh123nasty/ARTri3/commit/fcfe875e811c02248ef12cb0b29f3e341303c36f)
 * [Replit](https://replit.com/@AnirudhR8/ARTri3#.replit)
