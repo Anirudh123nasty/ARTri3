@@ -254,3 +254,24 @@
 ## What about Del Norte crowdsourcing? Could your final project be better with crowdsourcing?
 ### A: Del Norte crowdsourcing can be implemented by setting up a webpage where all users can edit and leave comments on what they want to see. The final project would be better since we would have a large sample size telling us exactly where to improve before our sponser sees our page.
 
+
+# 5.5 Github Page Action- Legal and Ethical Concerns
+## When you create a GitHub repository it requests a license type. Review the license types in relationship to this Tech Talk and make some notes in GitHub pages.
+### A: Some types of licenses are Creative Commons Zero v1.0 Universal, and this type is an open sources, meaning copyright interest in your work is waived. This basically means you can't claim work as your own even if you were the one who did it. Another type is MIT License (which is what our group is using) which allows code to be used by the public freely. Closed sources versions can be created, which makes it friendly to Qualcomm since they maintain their main source of income in patents. Lastly, a Open Source GPL License allows the public to do whatever they want EXCEPT distributing closed source versions.
+## Make a license for your personal and Team project. Document license you picked and why.
+### A: For both projects I choose the MIT license which allows users to freely access my project while I keep credit for my work and the idea.
+
+# 5.6 Github Page Action- Safe Computing
+## Describe PII you have seen on project in CompSci Principles.
+### A: I have seen personal information on our 'about us' page on my scrum team's home page like our names, our pictures, our school, state, and even emails in our CRUD database (we inputted a random email).
+## What are your feelings about PII and your exposure?
+### A: I feel that PII is very sensitive information that shouldn't be accessed by just anyone. However, with instagram and other social media platforms, the information is getting easier and easier to access.
+## Describe good and bad passwords? What is another step that is used to assist in authentication.
+### A: Bad passwords and easy to guess, generic, symmetrical, and short. Good passwords have potentially multiple layers of identification to ensure that even if someone guesses the password they still can't log in to your account. Another step in authentication is the use of encryption and keys to protect sensitive messages from the public.
+## Try to describe Symmetric and Asymmetric encryption.
+### A: Symmetric encrption has one key to encrypt and decrypt information while asymmetric encryption has related keys for each process.
+## Provide and example of encryption we used in deployment.
+### A: An example of encryption in deployment is when web browsers creates a session key that is encrypted with the server's public key. The server uses a private key to decrypt the session key.
+## Describe a phishing scheme you have learned about the hard way. Describe some other phishing techniques.
+### A: I thankfully haven't learned about phishing schemes the hard way, but my parents have. I remember my Mom's old office computor shut down and wouldn't restart when she opened an email from 'google.com' instead of just 'google'. One example of a technique is where emails are sent, and when opened install malware that might leak private information like your social security number. Another example of phishing are false urls that look correct but when clicked on install malware.
+
