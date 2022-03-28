@@ -394,6 +394,110 @@ def OddorEvenfinder():
 
 # OddorEvenfinder()
 ```
+### SS for Reorganized Files
+![image](https://user-images.githubusercontent.com/89223726/160330022-e08e9dcd-b1b3-4aa5-a684-ffc55f4d0842.png)
+
+### Code for Reorganized Files
+```python
+# menuy.py - function style menu
+# Imports typically listed at top
+# each import enables us to use logic that has been abstracted to other files and folders
+from TT0 import baseball
+from TT0 import swap
+from TT0 import matrix
+from TT0 import pattern
+from TT1 import fibo
+from TT1 import loop
+from APython import factorial
+from TT2 import classy
+from TT2 import imperative
+from TT2 import OOP
+
+
+
+# Main list of [Prompts, Actions]
+# Two styles are supported to execute abstracted logic
+# 1. file names will be run by exec(open("filename.py").read())
+# # 2. function references will be executed directly file.function()
+# main_menu = [
+#     ["Baseball Animation", baseball.ship],
+#     ["Swap", swap.testSwap],
+#     ["Matrix", matrix.tester],
+#     ["Loop", loop.looptester],
+#     ["Fibonacci", fibo.fibotester],
+#     ["Factorial", factorial.factorialtester],
+# ]
+
+main_menu = []
+
+
+
+# Submenu list of [Prompt, Action]
+# Works similarly to main_menu
+# sub_menu = [
+#     ["Christmas Tree", pattern.testPattern],
+# ]
+
+math_sub_menu = [
+    ["Matrix", matrix.tester],
+    ["Fibonacci", fibo.fibotester],
+    ["Factorial", factorial.factorialtester],
+    ["Factorial with class", classy.facttester],
+    ["Odd or Even (Imperative Method)", imperative.imperative],
+    ["Odd or Even (OOP Method)", OOP.OddorEvenfinder],
+]
+
+adventure_sub_menu = [
+    ["Baseball Animation", baseball.ship],
+    ["Swap", swap.testSwap],
+    ["Christmas Tree", pattern.testPattern],
+]
+
+data_sub_menu = [
+    ["Loops", loop.looptester],
+]
+# patterns_sub_menu = [
+#     ["Patterns", "patterns.py"],
+#     ["PreFuncy", "wipy/prefuncy.py"],
+#     ["Funcy", funcy.ship],
+# ]
+
+# Menu banner is typically defined by menu owner
+border = "=" * 25
+banner = f"\n{border}\nPlease Select An Option\n{border}"
+
+
+# def menu
+# using main_menu list:
+# 1. main menu and submenu reference are created [Prompts, Actions]
+# 2. menu_list is sent as parameter to menuy.menu function that has logic for menu control
+def menu():
+    title = "Function Menu" + banner
+    menu_list = main_menu.copy()
+    menu_list.append(["Math", math_submenu])
+    menu_list.append(["Adventure", adventure_submenu])
+    menu_list.append(["Data", data_submenu])
+
+  
+
+    # menu_list.append(["Patterns", patterns_submenu])
+    buildMenu(title, menu_list)
+
+# def submenu
+# using sub menu list above:
+# sub_menu works similarly to menu()
+def math_submenu():
+    title = "Function Submenu" + banner
+    buildMenu(title, math_sub_menu)
+def adventure_submenu():
+    title = "Function Submenu" + banner
+    buildMenu(title, adventure_sub_menu)
+
+def data_submenu():
+    title = "Function Submenu" + banner
+    buildMenu(title, data_sub_menu)
+```
+
 ## Github Links 
 * [Issue for organizing files](https://github.com/Anirudh123nasty/ARTri3/projects/1#card-79745861)
 * [Issue for factorial with class](https://github.com/Anirudh123nasty/ARTri3/projects/1#card-79745845)
