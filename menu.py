@@ -26,6 +26,7 @@ from TT2 import OOP
 #     ["Fibonacci", fibo.fibotester],
 #     ["Factorial", factorial.factorialtester],
 # ]
+from TT3 import athenaCrossover
 
 main_menu = []
 
@@ -50,6 +51,7 @@ adventure_sub_menu = [
     ["Baseball Animation", baseball.ship],
     ["Swap", swap.testSwap],
     ["Christmas Tree", pattern.testPattern],
+    ["Rock Paper Scissors", athenaCrossover.game],
 ]
 
 data_sub_menu = [
