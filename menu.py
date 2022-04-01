@@ -45,6 +45,7 @@ math_sub_menu = [
     ["Factorial with class", classy.facttester],
     ["Odd or Even (Imperative Method)", imperative.imperative],
     ["Odd or Even (OOP Method)", OOP.OddorEvenfinder],
+    ["Find the average", athenaCrossover.findAverage]
 ]
 
 adventure_sub_menu = [

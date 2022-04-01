@@ -101,3 +101,13 @@ def binary():
         print(num % 2, end = "")
     convert(decimal)
     print()
+
+def findAverage():
+    list = []
+    n = int(input("How many numbers are you entering? "))
+    count = 0
+    while count < n:
+        number = int(input("Enter a number: "))
+        list.append(number)
+        count = count + 1
+    print(list)
