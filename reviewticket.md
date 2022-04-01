@@ -9,7 +9,7 @@
     <br>
     <table>
         <tr>
-            <td><a href="https://github.com/Anirudh123nasty/ARTri3/projects/1#column-18003024">Column</a></td>
+            <td><a href="https://github.com/Anirudh123nasty/ARTri3/projects/1#column-18003024">Week 0 Column</a></td>
             <td><a href="https://github.com/Anirudh123nasty/ARTri3/issues/1">Finishing take action notes for TT and TPT</a></td>
             <td><a href="https://github.com/Anirudh123nasty/ARTri3/issues/2">Working on Pattern</a></td>
             <td><a href="https://github.com/Anirudh123nasty/ARTri3/issues/3">Adding submenu</a></td>
