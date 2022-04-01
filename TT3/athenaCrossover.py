@@ -93,4 +93,11 @@ def game():
     print("\nThanks for playing")
 
 def binary():
-    print("binary")
+    decimal = int(input("Please enter a number: "))
+    print("Your choice is: ", decimal)
+    def convert(num):
+        if num >= 1:
+            convert(num // 2)
+        print(num % 2, end = "")
+    convert(decimal)
+    print()
