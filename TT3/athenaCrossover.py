@@ -110,4 +110,10 @@ def findAverage():
         number = int(input("Enter a number: "))
         list.append(number)
         count = count + 1
-    print(list)
+    print("the list of numbers you inputted is: ", list)
+
+    def average(i):
+        avg = sum(i) / len(i)
+        return avg
+    average = average(list)
+    print("the average of the numbers ", list, " is ", average)
