@@ -52,6 +52,7 @@ adventure_sub_menu = [
     ["Swap", swap.testSwap],
     ["Christmas Tree", pattern.testPattern],
     ["Rock Paper Scissors", athenaCrossover.game],
+    ["Convert from decimal to binary", athenaCrossover.binary],
 ]
 
 data_sub_menu = [
