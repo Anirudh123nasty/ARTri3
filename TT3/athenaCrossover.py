@@ -82,7 +82,11 @@ def game():
 
         if ans == "n" or ans == "N":
             break
-
+        #if user input is not n, N, y, or Y
+        elif ans != "n" or "N" or "Y" or "y":
+            print("invalid input. Please Try Again")
+            print("Do you want to play again? (Y/N)")
+            ans = input()
 
     # after coming out of the while loop
     # we print thanks for playing
