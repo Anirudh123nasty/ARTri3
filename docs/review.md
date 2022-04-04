@@ -5,3 +5,5 @@
 ### Week 1 [Review Ticket](https://github.com/Anirudh123nasty/ARTri3/issues/6#issuecomment-1074327469)
 
 ### Week 2 [Review Ticket](https://github.com/Anirudh123nasty/ARTri3/issues/8)
+
+### Week 3 [Review Ticket](https://github.com/Anirudh123nasty/ARTri3/issues/12#issue-1189214302)
