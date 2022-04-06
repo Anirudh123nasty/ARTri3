@@ -1,2 +1,2 @@
 language = "bash"
-run = "python TT2/crossover.py"
+run = "python menu.py"
