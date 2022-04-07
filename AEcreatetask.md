@@ -248,8 +248,7 @@ def aecreatetask_index():
 ```
 ## The second program code segment must show where your student-developed procedure is being called in your program:
 ```html
-{% endblock %}
-{% block body %}
+
     <body style="background-color: rebeccapurple">
     <div class="center">
     <h1 style="text-align:center; font-size: 90px">Odd Math Functions!</h1>
@@ -267,9 +266,6 @@ def aecreatetask_index():
         </form>
     </div>
 
-
-
-{% endblock %}
 </body>
 ```
 ## Describes in general what the identified procedure does and how it contributes to the overall functionality of the program:
