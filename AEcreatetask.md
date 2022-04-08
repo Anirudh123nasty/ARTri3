@@ -341,6 +341,9 @@ function factdriver () {
     factorial(e)
 }
 ```
+## Code Comments
+![image](https://user-images.githubusercontent.com/89223726/162528720-7dabb0f6-54d0-4ee9-9443-e16415c1d319.png)
+
 The final triangle value is displayed as a result of the second function being called.
 ## Design Ideas and Usage
 * our main idea was to create a unique math page that the user couldn't find on a standard calculator
