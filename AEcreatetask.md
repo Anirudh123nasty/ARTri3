@@ -323,6 +323,24 @@ The final factorial value is displayed as a result of the first function being c
         document.getElementById("response").innerHTML = "Please enter valid inputs!"
     }
 ```
+### Function with passed in parameter
+```javascript
+function factorial (e) {
+    let count = 1;
+    let ans = 1;
+    while (count <= e-1) {
+        count += 1;
+        ans = count * ans
+    }
+    console.log(ans);
+    document.getElementById("ans").innerHTML = "Answer is " + ans;
+}
+
+function factdriver () {
+    e = document.getElementById("e").value;
+    factorial(e)
+}
+```
 The final triangle value is displayed as a result of the second function being called.
 ## Design Ideas and Usage
 * our main idea was to create a unique math page that the user couldn't find on a standard calculator
