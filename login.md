@@ -58,6 +58,8 @@ def crud_authorize():
     # show the auth user page if the above fails for some reason
     return render_template("authorize.html")
 ```
+![image](https://user-images.githubusercontent.com/89223726/162532879-05fd4bda-77f1-4156-9e0c-2a718493a59d.png)
+
 ### Hack 2
 ```python
 @app_crud.route('/logout/', methods=["POST"])
@@ -70,6 +72,8 @@ def logout():
 <a href={{url_for('crud.crud_login')}}>Log Out</a>
             <p>{{current_user.name}}</p>
 ```
+![image](https://user-images.githubusercontent.com/89223726/162533111-a5d0064f-debc-469b-963d-12e1d703582d.png)
+
 ### Hack 3
 ```python
 @app_frontend.route('/life')
@@ -80,3 +84,4 @@ def life():
 ```python
 from flask_login import login_required
 ```
+![image](https://user-images.githubusercontent.com/89223726/162533274-00550646-ea35-4fb8-8b87-aafd228d452e.png)
