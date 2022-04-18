@@ -343,6 +343,7 @@ function factdriver () {
 ```
 ## Code Comments
 ![image](https://user-images.githubusercontent.com/89223726/162528720-7dabb0f6-54d0-4ee9-9443-e16415c1d319.png)
+[Commit with code comments](https://github.com/NastyAwakened/NastyAwakened/commit/bc64c68f0ed0725f3601349c8d502f5b0df34c9f)
 
 The final triangle value is displayed as a result of the second function being called.
 ## Design Ideas and Usage
