@@ -1,3 +1,4 @@
+{% include navigation.html %}
 ![image](https://user-images.githubusercontent.com/89223726/164283923-bd47635b-f369-4c4d-a51f-f28751f551d2.png)
 # Anirudh Ramachandran, Ms. Naidu, Period 4 Score: 48/50
 
