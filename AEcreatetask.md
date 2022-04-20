@@ -169,6 +169,8 @@ fs = [1,]
 * The list stores all the numbers of the Fibonacci sequence
 * When the user inputs how many times the loop runs, the list will store each new value created in the sequence
 
+# End of What we did together. Starts all written responses I did by myself.
+
 ## Describes the overall purpose of the program:
 
 The purpose of our program was to provide odd math functions one a single page that users might not be able to access with a scientific calculator.
