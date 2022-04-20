@@ -323,6 +323,7 @@ The final factorial value is displayed as a result of the first function being c
         document.getElementById("response").innerHTML = "Please enter valid inputs!"
     }
 ```
+The final triangle value is displayed as a result of the second function being called.
 ### Function with passed in parameter
 ```javascript
 function factorial (e) {
@@ -345,7 +346,6 @@ function factdriver () {
 ![image](https://user-images.githubusercontent.com/89223726/162528720-7dabb0f6-54d0-4ee9-9443-e16415c1d319.png)
 [Commit with code comments](https://github.com/NastyAwakened/NastyAwakened/commit/bc64c68f0ed0725f3601349c8d502f5b0df34c9f)
 
-The final triangle value is displayed as a result of the second function being called.
 ## Design Ideas and Usage
 * our main idea was to create a unique math page that the user couldn't find on a standard calculator
 * in general, our design idea is to have multiple lines and buttons on the page, with the results being displayed right to the submit button
