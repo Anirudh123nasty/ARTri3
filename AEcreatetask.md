@@ -169,6 +169,15 @@ fs = [1,]
 * The list stores all the numbers of the Fibonacci sequence
 * When the user inputs how many times the loop runs, the list will store each new value created in the sequence
 
+## Code Comments
+![image](https://user-images.githubusercontent.com/89223726/162528720-7dabb0f6-54d0-4ee9-9443-e16415c1d319.png)
+[Commit with code comments](https://github.com/NastyAwakened/NastyAwakened/commit/bc64c68f0ed0725f3601349c8d502f5b0df34c9f)
+
+## Design Ideas and Usage
+* our main idea was to create a unique math page that the user couldn't find on a standard calculator
+* in general, our design idea is to have multiple lines and buttons on the page, with the results being displayed right to the submit button
+* these math functions meet many of CB's create a task requirements for iteration, selection, sequencing, calling functions, and the use of lists
+
 # End of What we did together. Starts all written responses I did by myself.
 
 ## Describes the overall purpose of the program:
@@ -344,11 +353,4 @@ function factdriver () {
     factorial(e)
 }
 ```
-## Code Comments
-![image](https://user-images.githubusercontent.com/89223726/162528720-7dabb0f6-54d0-4ee9-9443-e16415c1d319.png)
-[Commit with code comments](https://github.com/NastyAwakened/NastyAwakened/commit/bc64c68f0ed0725f3601349c8d502f5b0df34c9f)
 
-## Design Ideas and Usage
-* our main idea was to create a unique math page that the user couldn't find on a standard calculator
-* in general, our design idea is to have multiple lines and buttons on the page, with the results being displayed right to the submit button
-* these math functions meet many of CB's create a task requirements for iteration, selection, sequencing, calling functions, and the use of lists
