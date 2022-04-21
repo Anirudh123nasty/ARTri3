@@ -20,3 +20,32 @@ WRONG: B, Each packet contains an encrypted version of the data to be transmitte
 RIGHT: A, Each packet contains data to be transmitted, along with metadata containing information used for routing the data.
  
 Packets aren’t encrypted by default, that is only if they contain sensitive or private information that might cause people lots of problems if stolen online, like government secrets.
+
+![image](https://user-images.githubusercontent.com/89223726/164543624-fe8799ce-41bf-47c7-80ab-0d1f2bcf3dd0.png)
+# Anirudh Ramachandran, Ms. Naidu, Period 4 Score: 47/50
+
+### 8. Which of the following is NOT an advantage of using open-source software?
+ 
+WRONG: D, Unlike commercial software, which can become obsolete when the company that created it goes out of business, open-source software can be updated without the involvement of the original programmers.
+ 
+RIGHT: C, The original developer of open-source software provides free or low-cost support for users installing and running the software.
+
+There is no agreement that developers of open source software will provide free or cheap updates compared to commerical software.
+ 
+### 14. Which of the following best describes the average amount of data stored per user for the first eight years of the application’s existence?
+ 
+WRONG: C, The average amount of data stored per user appears to increase by about 10 GB each year.
+ 
+RIGHT: A, Across all eight years, the average amount of data stored per user was about 10 GB.
+ 
+The ratio of 10:1 means there is a constant user storage rate of 10 GB, not that it increase by that amount every year.
+
+### 45. The teacher wants to determine whether students who play a sport are more or less likely to have higher grade point averages than students who do not play any sports. Which of the following pairs of spreadsheets can be combined and analyzed to determine the desired information?
+ 
+WRONG: C, Spreadsheets II and III
+ 
+RIGHT: A, Spreadsheets I and II
+
+Using the whole spreadsheet, you can compared students you play multiple sports to those with high GPAs from the whole data sheet.
+ 
+The ratio of 10:1 means there is a constant user storage rate of 10 GB, not that it increase by that amount every year.
