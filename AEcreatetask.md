@@ -178,7 +178,7 @@ fs = [1,]
 * in general, our design idea is to have multiple lines and buttons on the page, with the results being displayed right to the submit button
 * these math functions meet many of CB's create a task requirements for iteration, selection, sequencing, calling functions, and the use of lists
 
-# End of What we did together. Starts all written responses I did by myself.
+# End of Ethan and I wrote together for CSP. Here is Anirudh's INDIVIDUAL responses for create task questions.
 
 ## Describes the overall purpose of the program:
 
@@ -204,6 +204,7 @@ The input of the program are numbers, and the output is the area of a triangle w
             b = int(a)
             fs = [1,]
 ```
+The list comes from Ethan Vo's function, who I worked with on my create task project when writing code. Here, the list is created, and is specified to start from 1 with no defined end value yet. This allows us to add on to the list by appending values.
 ## The second program code segment must show the data in the same list being used, such as creating new data from the existing data or accessing multiple elements in the list, as part of fulfilling the program’s purpose:
 ``` python
  if b == 1:
@@ -221,12 +222,13 @@ The input of the program are numbers, and the output is the area of a triangle w
     except:
         return render_template("aecreatetaskIndex.html", a="Something went wrong try again")
 ```
+Again, this comes from Ethan Vo's function. b is set to the number that equals the user's input value. The for loop then carries out the code for the fibonacci sequence (which adds variables x and y and sets that value to z, then sets x to y and y to z, and finally incremantally increases the value of i by 1. z (which represents the term value for each interation of 'i') is then appended to the list 'fs'.
 ## Identifies the name of the list being used in this response:
-The name of the list is fs.
+The name of the list is fs, which stands for fibonacci sequence.
 ## Describes what the data contained in the list represent in your program:
-The data in the list represents all the terms of the fibonacci sequence from 1 to the user entered term number.
+The data in the list represents all the terms of the fibonacci sequence from 1 to the user entered term number. This value is specifically set to z, while other variables x and y change with every iteration of i and are added to get variable z.
 ## Explains how the selected list manages complexity in your program code by explaining why your program code could not be written, or how it would be written differently, if you did not use the list:
-The program could be written to javascript similar to the factorial function, where terms and generated based on whether conditions are met. However, this wouldn't give all the values of the fibonacci sequence. To show all the terms, a list (where terms can be stored) has to be used.
+The program could be written to javascript similar to the factorial function, where terms and generated based on whether conditions are met (which as using a while loop to continally add numbers together until the user's numerical input value is reached. However, this wouldn't give all the values of the fibonacci sequence. To show all the terms, a list (where terms can be stored) has to be used.
 ## The first program code segment must be a student-developed procedure that
 ### *  Defines the procedure’s name and return type (if necessary)
 ### *  Contains and uses one or more parameters that have an effect on the functionality of the procedure
@@ -235,7 +237,7 @@ The program could be written to javascript similar to the factorial function, wh
 def aecreatetask_index():
     try:
         if request.form:
-            a = request.form.get("f") #user input
+            a = request.form.get("f") #user input, parameter that is passed into the function
             print("The number is " + a)
             x = 0
             y = 1
@@ -257,6 +259,7 @@ def aecreatetask_index():
     except:
         return render_template("aecreatetaskIndex.html", a="Something went wrong try again")
 ```
+This function was written by Ethan Vo. Sequencing is met since each line of code is run line by line until the end. Selection is met through the 'try except' method in python, which runs the first segment of the function to generate fibonacci terms. If there is a error (which likely would be caused by the progam not able to get the user input 'f', set it to 'a', and then set 'b' to the integer value of 'a'), when the second segment of code would run. This displays the same page, and sets 'a' to an error message that displays below the user input area.
 ## The second program code segment must show where your student-developed procedure is being called in your program:
 ```html
 
@@ -279,10 +282,11 @@ def aecreatetask_index():
 
 </body>
 ```
+The python function 'aecreatetask_index()' is called using html, with the form action method. The url with the name of the function, the id for the user's input, and POST method is used to call the function (which was written in python) in a javascript file. In the next line of code, html with 'button' is used to run function 'aecreatetask_index()' when pressed. Finally, the format of output is specified with the user entered value specified as 'a' and the list specified as 'fs'.
 ## Describes in general what the identified procedure does and how it contributes to the overall functionality of the program:
 The identified procedures both generates and displays all the fibonacci terms until the user inputted term number. Overall, this function gives users access to an odd math sequence that they may not have on their calculators.
 ## Explains in detailed steps how the algorithm implemented in the identified procedure works. Your explanation must be detailed enough for someone else ## to recreate it:
-First, the value is obtained from the user input with request.form.get, since 'f' is just the ID of the input. Then, three variables are used: x, y and z. Variables a (which is set to the user input) and b (the integer of a) are additionally used to take care of the first term, which follows no pattern. Then, a list is created that's named fs. A for loop is used that repeats until i is one less than b, where i iterates and increases by 1 every time the loop is carried out. The loop adds variables x and y to z, sets x and y equal, and then sets z equal to y. Z is then appended to the list fs.
+First, the value is obtained from the user input with request.form.get, since 'f' is just the ID of the input. Then, three variables are used: x, y and z. Variables a (which is set to the user input) and b (the integer of a) are additionally used to take care of the first term, which follows no pattern. Then, a list is created that's named 'fs'. A for loop is used that repeats until i is one less than b, where i iterates and increases by 1 every time the loop is carried out. The loop adds variables x and y to z, sets x and y equal, and then sets z equal to y. z is then appended to the list fs.
 
 ## Describes two calls to the procedure identified in written response 3c. Each call must pass a different argument(s) that causes a different segment of ## code in the algorithm to execute.
 ### First call:
@@ -291,6 +295,7 @@ First, the value is obtained from the user input with request.form.get, since 'f
         <button onclick="factorial()">Factorial!</button>
         <h1 id="ans"></h1>
 ```
+Here the javascript function 'factorial()' which I wrote that is being called with the click of a button. This function generates the factorial for any number the user inputs.
 ### Second call:
 ```html
  <input id="base" placeholder="Length of Base" type="number">
@@ -298,6 +303,7 @@ First, the value is obtained from the user input with request.form.get, since 'f
         <button onclick="tri()">Find the area of an triangle!</button>
         <h1 id="response"></h1>
 ```
+Here is a similar call in html for another function 'tri()' with the button onclick method, which I also wrote. This function generates the area of a triangle when the user inputs numerical values for the length and base.
 ## Describes what condition(s) is being tested by each call to the procedure: 
 ### Condition(s) tested by the first call:
 ```javascript
@@ -307,6 +313,7 @@ function factorial () {
     let ans = 1;
     while (count <= e-1) {
 ```
+The function 'factorial' (which I wrote) only starts its algorithm to generate the factorial of the number the user inputted 'while' the condition is met that the 'count' is less than or equal to the user inputted number minus one.
 ### Condition(s) tested by the second call:
 ```javascript
 function tri () {
@@ -314,6 +321,7 @@ function tri () {
     const height = document.getElementById("height").value;
     if (base > 0 && height >0) {
 ```
+The function 'tri' (which I wrote) only starts the algorithm to generate the area of an triangle with user inputs for height and base if the value for height is positive and the value for base is positive.
 ## Identifies the result of each call
 ### Result of the first call:
 ```javascript
@@ -324,7 +332,7 @@ function tri () {
     console.log(ans);
     document.getElementById("ans").innerHTML = "Answer is " + ans;
 ```
-The final factorial value is displayed as a result of the first function being called.
+This is the actual algorithm the function 'factorial' (which I wrote) uses the generate the factorial of the user inputted number runs while the value for 'count' is less than or equal to the user inputted number minus one. The 'count' is set equal to its value incrementally increased by one. The 'ans' (answer or value for the factorial) is then set equal to the 'ans' times the 'count' Essentially, this performs the work neccesary for finding the factorial, but in a reverse manner, since it starts from 1 and multiplies incrementally increasing numbers until the final value for the factorial is reached. The final factorial value is displayed as a result of the first function being called.
 ### Result of the second call:
 ```javascript
  if (base > 0 && height >0) {
@@ -334,7 +342,9 @@ The final factorial value is displayed as a result of the first function being c
         document.getElementById("response").innerHTML = "Please enter valid inputs!"
     }
 ```
-The final triangle value is displayed as a result of the second function being called.
+This is the actual algorithm the function 'tri'(which I wrote) uses to generate the area of the triangle with the values of height and base the user inputted. If both the user inputted base and height are positive, then a new variable called 'area' is set equal to the value of the base and height multiplied together and divided by 2. Additionally, 'parseInt' is used to return integer values from the positive user inputs (which previously were stored as strings). Finally, the element 'response' is set equal to the area using document.getElementById. In this whole procedure, an if else statement was used to take care of errors. If the base wasn't greater than zero or the height wasn't greated than zero, then the element 'response' is set equal to a phrase that reminds the user to only enter appropriate values (positive numerial numbers).
+<!--  IN ETHAN'S RESPONSE DON'T USE-->
+<!-- The final triangle value is displayed as a result of the second function being called.
 ### Function with passed in parameter
 ```javascript
 function factorial (e) {
@@ -352,5 +362,5 @@ function factdriver () {
     e = document.getElementById("e").value;
     factorial(e)
 }
-```
+``` -->
 
