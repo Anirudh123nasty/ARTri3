@@ -51,5 +51,6 @@ Using the whole spreadsheet, you can compared students you play multiple sports 
 The ratio of 10:1 means there is a constant user storage rate of 10 GB, not that it increase by that amount every year.
 
 # [Review Ticket with Study Plan and Reflection](https://github.com/Anirudh123nasty/ARTri3/projects/1#card-80783193)
-# [One Minute Video for Create Task](https://www.kapwing.com/videos/62646bb9256e2200ea2e4cf7)
+# [One Minute Video for Create Task](https://www.kapwing.com/videos/6264a7e677feb7008fa8c1c8)
 # [Link to Crossover Review Ticket](https://github.com/Anirudh123nasty/ARTri3/projects/1#card-81031052) 
+# [Link to GitHub Pages with Written Responses](https://anirudh123nasty.github.io/ARTri3/AEcreatetask) 
