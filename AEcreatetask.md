@@ -186,7 +186,7 @@ The purpose of our program was to provide odd math functions one a single page t
 
 ## Describes what functionality of the program is demonstrated in the video:
 
-The programs iteration, selection, and sequencing was met through the three major functions was finding all the fibonacci terms, the area of a triangle, and generating the factorial of any given number. Additionally, functions are being called, parameters are provided for functions by getelementbyID, and lists are used.
+The programs iteration, selection, and sequencing was met through the three major functions was finding all the fibonacci terms, the area of a triangle, and generating the factorial of any given number. Additionally, functions are being called, parameters are provided for functions by getelementbyID, and lists are used. The functions that I wrote are 'factorial()' and 'tri()', and the function my partner Ethan Vo wrote are 'factdriver()' and 'aecreatetask_index()'.
 
 ## Describes the input and output of the program demonstrated in the video
 
@@ -233,87 +233,97 @@ The program could be written to javascript similar to the factorial function, wh
 ### *  Defines the procedure’s name and return type (if necessary)
 ### *  Contains and uses one or more parameters that have an effect on the functionality of the procedure
 ### *  Implements an algorithm that includes sequencing, selection, and iteration
-``` python
-def aecreatetask_index():
-    try:
-        if request.form:
-            a = request.form.get("f") #user input, parameter that is passed into the function
-            print("The number is " + a)
-            x = 0
-            y = 1
-            z = 0
-            b = int(a)
-            fs = [1,]
-            if b == 1:
-                z = 1
-                return render_template("aecreatetaskIndex.html", a="The Fibonaci sequence up to term " + a + " is: ", z=z)
-            else:
-                for i in range(b-1):
-                    z = x + y
-                    x = y
-                    y = z
-                    i += 1
-                    fs.append(z)
-                return render_template("aecreatetaskIndex.html", a="The Fibonaci sequence up to term " + a + " is: ", fs=fs)
-        return render_template("aecreatetaskIndex.html", a="")
-    except:
-        return render_template("aecreatetaskIndex.html", a="Something went wrong try again")
+``` javascript
+{#Takes parameter e, which is user input. Count is incremented up by one until it reachs the input number value.#}
+function factorial (e) {
+    let count = 1;
+    let ans = 1;
+    if (e > 0 || /[0-99999999]/.test(e)) {
+        while (count <= e-1) {
+            count += 1;
+            ans = count * ans
+        }
+        console.log(ans);
+        document.getElementById("ans").innerHTML = "Answer is " + ans;
+    } else {
+        document.getElementById("responsef").innerHTML = "Please enter positive, numerical inputs only!"
+    }
+}
+{#allows factorial function to make parameter#}
+function factdriver () {
+    e = document.getElementById("e").value;
+    factorial(e)
+}
+{#Sets base and height to user input, then accounts for invalid inputs with if else statement.#}
+function tri () {
+    const base = document.getElementById("base").value;
+    const height = document.getElementById("height").value;
+    if (base > 0 && height >0) {
+        let area = (parseInt(base) * parseInt(height)) / 2;
+        document.getElementById("response").innerHTML = "Answer is " + area;
+    } else {
+        document.getElementById("response").innerHTML = "Please enter valid inputs!"
+    }
+}
 ```
-This function was written by Ethan Vo. Sequencing is met since each line of code is run line by line until the end. Selection is met through the 'try except' method in python, which runs the first segment of the function to generate fibonacci terms. If there is a error (which likely would be caused by the progam not able to get the user input 'f', set it to 'a', and then set 'b' to the integer value of 'a'), when the second segment of code would run. This displays the same page, and sets 'a' to an error message that displays below the user input area.
+I wrote both functions 'tri' and 'factorial'. My partner Ethan Vo wrote the function 'factdriver()' to add a parameter to our createtask project. Sequencing is met since each line of code is run line by line until the end. Selection is met through the 'if else' method in javascript, which as used in both functions. This runs the first segment of the function to generate the factorial value or triangle area. If there is a error (which likely would be caused by a failure of meeting the conditions in the 'if' statement), when the second segment of code would run. This sets the element that is displayed under the input box to a failure message that alerts the user that their inputs aren't valid. Iteration is met through the use of a while loop in the 'factorial' function, which repeats the lines of code used to generate the factorial value until the conditions are no longer met. The procedures names are defined when the functions are created with the format 'function tri () {}' and 'function factorial (e) {}'. The return type is specified using document.getElementById, where the displayed element is set equal to an element that stores answer following the phrase "Answer is ". Here is an example: document.getElementById("ans").innerHTML = "Answer is " + ans;. Finally, parameters are passed into the function 'factorial()' with the use of another function 'factdriver()' that sets the user input value to the element 'e', and then calls the function factorial with 'e' passed inside as a parameter. 
 ## The second program code segment must show where your student-developed procedure is being called in your program:
 ```html
-
-    <body style="background-color: rebeccapurple">
     <div class="center">
-    <h1 style="text-align:center; font-size: 90px">Odd Math Functions!</h1>
-        <input id="e" placeholder="Number" type="number">
-        <button onclick="factorial()">Factorial!</button>
-        <h1 id="ans"></h1>
+    <h1 style="text-align:center; font-size: 90px; color:white">Odd Math Functions!</h1>
+        <input id="e" placeholder="Number">
+        <button onclick="factdriver()">Factorial!</button>
+        <h1 style="color:white" id="ans"></h1>
+        <h1 style="color:white" id="responsef"></h1>
         <input id="base" placeholder="Length of Base" type="number">
         <input id="height" placeholder="Length of Height" type="number">
         <button onclick="tri()">Find the area of an triangle!</button>
-        <h1 id="response"></h1>
+        <h1 style="color:white" id="response"></h1>
         <form action="{{ url_for('aecreatetask_index') }}" id="enter" method="POST" >
             <input type="number" name="f" placeholder="Number of Terms" id="f">
             <button type="submit" value="Fibonacci!">Fibonacci!</button>
-            <p>{{ a }}  {{ fs }} </p>
+            <h1 style="color:white" >{{ a }}  {{ fs }}</h1>
         </form>
     </div>
-
-</body>
 ```
-The python function 'aecreatetask_index()' is called using html, with the form action method. The url with the name of the function, the id for the user's input, and POST method is used to call the function (which was written in python) in a javascript file. In the next line of code, html with 'button' is used to run function 'aecreatetask_index()' when pressed. Finally, the format of output is specified with the user entered value specified as 'a' and the list specified as 'fs'.
+The javascript function 'factdriver' is called using html, with the button on click method since the user clicks a button to determine the factorial value. This is the same case with the javascript function 'tri' since the user also clicks a button to determine the area of an triangle.
+
 ## Describes in general what the identified procedure does and how it contributes to the overall functionality of the program:
-The identified procedures both generates and displays all the fibonacci terms until the user inputted term number. Overall, this function gives users access to an odd math sequence that they may not have on their calculators.
-## Explains in detailed steps how the algorithm implemented in the identified procedure works. Your explanation must be detailed enough for someone else ## to recreate it:
-First, the value is obtained from the user input with request.form.get, since 'f' is just the ID of the input. Then, three variables are used: x, y and z. Variables a (which is set to the user input) and b (the integer of a) are additionally used to take care of the first term, which follows no pattern. Then, a list is created that's named 'fs'. A for loop is used that repeats until i is one less than b, where i iterates and increases by 1 every time the loop is carried out. The loop adds variables x and y to z, sets x and y equal, and then sets z equal to y. z is then appended to the list fs.
+
+
+The identified procedures 'tri' and 'factorial' generates and displays the area of the triangle with the user specified height and base and generates the factorial value of the user inputted number. Overall, this function gives users access to odd math functions that they may not have on their calculators/or may take them too much time to compute.
+
+## Explains in detailed steps how the algorithm implemented in the identified procedure works. Your explanation must be detailed enough for someone else to recreate it:
+First, for the function 'factorial', the element 'e' which stores the user inputted value is passed into the function as a parameter through the use of the function 'factdriver'. The variables 'count' and 'ans' are both set to 1. Then, the user input is tested if it meets the requirements. This is done with the use of an 'if else' statement. If the value of e is either positive or within the values of 0 to 99999999, then the algorithm to generate the value for the factorial is started. The value is generating using a while loop, which carried out a specific procedure as long as the conditions are met. These different conditions require the 'count' to be less than or equal to the user inputted value minus one. While this condition is met, count is incrementally increased by one and the element 'ans' is set equal to the updated value of the element 'count' times the current value of element 'ans'. The element 'ans' is set to the value of constant 'ans' to dispolay the final value. Error is accounted for with the 'else' statement that sets element 'resopnsef' to an error message. This only runs if the conditions in the if statement aren't met.
+
+For the function 'tri', first constants base and height are set equal to elements 'base' and 'height'. Then another 'if else' statement is used to test conditions that determine whether the user inputs are valid. If both the base and the height are larger than 0, then a new variable 'area' is set equal to the base times the height divided by two. parseInt is used here to mathematical calculations by returning a numeric value from the strings stored in 'base' and 'height'. Finally, document.getElementById is used to display the answer by setting element 'response' to constant 'area. There is also an else statement here that sets 'response' to an error message, and this displays if the conditions in the 'if statement' aren't met.
 
 ## Describes two calls to the procedure identified in written response 3c. Each call must pass a different argument(s) that causes a different segment of ## code in the algorithm to execute.
 ### First call:
 ```html
-<input id="e" placeholder="Number" type="number">
-        <button onclick="factorial()">Factorial!</button>
-        <h1 id="ans"></h1>
+        <input id="e" placeholder="Number">
+        <button onclick="factdriver()">Factorial!</button>
+        <h1 style="color:white" id="ans"></h1>
+        <h1 style="color:white" id="responsef"></h1>
 ```
-Here the javascript function 'factorial()' which I wrote that is being called with the click of a button. This function generates the factorial for any number the user inputs.
+Here the javascript function 'factorial()' which I wrote that is being called with the click of a button. This function generates the factorial for any number the user inputs. 'ans' is an element that is the factorial value of the number the user inputted, and 'responsef' is another element that is used to account for error like invalid inputs.
 ### Second call:
 ```html
- <input id="base" placeholder="Length of Base" type="number">
+        <input id="base" placeholder="Length of Base" type="number">
         <input id="height" placeholder="Length of Height" type="number">
         <button onclick="tri()">Find the area of an triangle!</button>
-        <h1 id="response"></h1>
+        <h1 style="color:white" id="response"></h1>
 ```
 Here is a similar call in html for another function 'tri()' with the button onclick method, which I also wrote. This function generates the area of a triangle when the user inputs numerical values for the length and base.
 ## Describes what condition(s) is being tested by each call to the procedure: 
 ### Condition(s) tested by the first call:
 ```javascript
-function factorial () {
-    var e = document.getElementById("e").value;
+function factorial (e) {
     let count = 1;
     let ans = 1;
-    while (count <= e-1) {
+    if (e > 0 || /[0-99999999]/.test(e)) {
 ```
-The function 'factorial' (which I wrote) only starts its algorithm to generate the factorial of the number the user inputted 'while' the condition is met that the 'count' is less than or equal to the user inputted number minus one.
+The function 'factorial' (which I wrote) only starts its algorithm to generate the factorial of the number the user inputted 'if' the condition is met that 'e' (or the user input) is greater than zero or was in the range 0-99999999.
 ### Condition(s) tested by the second call:
 ```javascript
 function tri () {
@@ -325,14 +335,18 @@ The function 'tri' (which I wrote) only starts the algorithm to generate the are
 ## Identifies the result of each call
 ### Result of the first call:
 ```javascript
- while (count <= e-1) {
-        count += 1;
-        ans= count * ans
+         while (count <= e-1) {
+            count += 1;
+            ans = count * ans
+        }
+        console.log(ans);
+        document.getElementById("ans").innerHTML = "Answer is " + ans;
+    } else {
+        document.getElementById("responsef").innerHTML = "Please enter positive, numerical inputs only!"
     }
-    console.log(ans);
-    document.getElementById("ans").innerHTML = "Answer is " + ans;
+}
 ```
-This is the actual algorithm the function 'factorial' (which I wrote) uses the generate the factorial of the user inputted number runs while the value for 'count' is less than or equal to the user inputted number minus one. The 'count' is set equal to its value incrementally increased by one. The 'ans' (answer or value for the factorial) is then set equal to the 'ans' times the 'count' Essentially, this performs the work neccesary for finding the factorial, but in a reverse manner, since it starts from 1 and multiplies incrementally increasing numbers until the final value for the factorial is reached. The final factorial value is displayed as a result of the first function being called.
+This is the actual algorithm the function 'factorial' (which I wrote) uses the generate the factorial of the user inputted number runs while the value for 'count' is less than or equal to the user inputted number minus one. The 'count' is set equal to its value incrementally increased by one. The 'ans' (answer or value for the factorial) is then set equal to the 'ans' times the 'count' Essentially, this performs the work neccesary for finding the factorial, but in a reverse manner, since it starts from 1 and multiplies incrementally increasing numbers until the final value for the factorial is reached. The final factorial value is displayed through the use of document.getElementById- which displays 'ans'. There is also an else statement that also uses document.getElementById to set new variable 'responsef' to account for invalid user inputs like negative values.
 ### Result of the second call:
 ```javascript
  if (base > 0 && height >0) {
@@ -343,24 +357,4 @@ This is the actual algorithm the function 'factorial' (which I wrote) uses the g
     }
 ```
 This is the actual algorithm the function 'tri'(which I wrote) uses to generate the area of the triangle with the values of height and base the user inputted. If both the user inputted base and height are positive, then a new variable called 'area' is set equal to the value of the base and height multiplied together and divided by 2. Additionally, 'parseInt' is used to return integer values from the positive user inputs (which previously were stored as strings). Finally, the element 'response' is set equal to the area using document.getElementById. In this whole procedure, an if else statement was used to take care of errors. If the base wasn't greater than zero or the height wasn't greated than zero, then the element 'response' is set equal to a phrase that reminds the user to only enter appropriate values (positive numerial numbers).
-<!--  IN ETHAN'S RESPONSE DON'T USE-->
-<!-- The final triangle value is displayed as a result of the second function being called.
-### Function with passed in parameter
-```javascript
-function factorial (e) {
-    let count = 1;
-    let ans = 1;
-    while (count <= e-1) {
-        count += 1;
-        ans = count * ans
-    }
-    console.log(ans);
-    document.getElementById("ans").innerHTML = "Answer is " + ans;
-}
-
-function factdriver () {
-    e = document.getElementById("e").value;
-    factorial(e)
-}
-``` -->
 
