@@ -2,17 +2,16 @@
 
 
 
-# Create Task Project
-## Me and Ethan are planning on working together to make a math function page for the create a task project.
+<!-- # Create Task Project
+## Me and Ethan are planning on working together to make a math function page for the create a task project. -->
 
 ## Runtime
-[Video Showing Runtime](https://www.loom.com/share/42a83665a0b64a1192f4d168568f98a6?sharedAppSource=personal_library)
+[Video Showing Runtime](https://loom.com/share/b12746083af449339ffe4ef3e44d0ce1)
 
 # General Requirements # 
-
 [Link to Requirements](https://apcentral.collegeboard.org/pdf/ap-csp-student-task-directions.pdf?course=ap-computer-science-principles)
 
-# Submission Requirements
+<!-- # Submission Requirements
 ## PROGRAM CODE (CREATED INDEPENDENTLY OR COLLABORATIVELY)
 Submit one PDF file that contains all of your program code (including
 comments). Include comments or acknowledgments for any part of the
@@ -177,8 +176,8 @@ fs = [1,]
 * our main idea was to create a unique math page that the user couldn't find on a standard calculator
 * in general, our design idea is to have multiple lines and buttons on the page, with the results being displayed right to the submit button
 * these math functions meet many of CB's create a task requirements for iteration, selection, sequencing, calling functions, and the use of lists
-
-# End of Ethan and I wrote together for CSP. Here is Anirudh's INDIVIDUAL responses for create task questions.
+ -->
+# End of what Ethan and I wrote together for CSP. Here is Anirudh's INDIVIDUAL responses for create task questions.
 
 ## Describes the overall purpose of the program:
 
