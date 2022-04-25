@@ -50,6 +50,11 @@ Using the whole spreadsheet, you can compared students you play multiple sports 
  
 The ratio of 10:1 means there is a constant user storage rate of 10 GB, not that it increase by that amount every year.
 
+# Study Plan
+My plan is to focus my time to the practice MC exams we conduct in class. Me and Ethan (who are duos) will finish and turn in the create task project by this weekend so it will be on the time before the due date of May 2nd. On Monday, we peer graded out accounts and login work. On Tuesday, we took the practice MC. On Wednesday, I plan to go over my mistakes from the first quiz (which I scored a 48/50 on). I will repeat this steps on Thursday and Friday.
+
+Update after full week. I studied my mistakes and watched collegeboard videos on Wednesday, and was in a study group with Michael and Sahil. I then took Quiz 2 on Thursday, and scored a 47/50. I then finished my corrections on Friday, and added them to GitHub Pages. Over the weekend, I plan to touch up my collegeboard create task responses, and make sure Ethan and I are ready to turn them in by the 2nd. They are already on my GitHub Pages.
+
 # [Review Ticket with Study Plan and Reflection](https://github.com/Anirudh123nasty/ARTri3/projects/1#card-80783193)
 # [One Minute Video for Create Task](https://www.kapwing.com/videos/6264a7e677feb7008fa8c1c8)
 # [Link to Crossover Review Ticket](https://github.com/Anirudh123nasty/ARTri3/projects/1#card-81031052) 
