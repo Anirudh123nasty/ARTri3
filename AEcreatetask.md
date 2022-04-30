@@ -5,11 +5,11 @@
 <!-- # Create Task Project
 ## Me and Ethan are planning on working together to make a math function page for the create a task project. -->
 
-## Runtime
+<!-- ## Runtime
 [Video Showing Runtime](https://loom.com/share/b12746083af449339ffe4ef3e44d0ce1)
 
 # General Requirements # 
-[Link to Requirements](https://apcentral.collegeboard.org/pdf/ap-csp-student-task-directions.pdf?course=ap-computer-science-principles)
+[Link to Requirements](https://apcentral.collegeboard.org/pdf/ap-csp-student-task-directions.pdf?course=ap-computer-science-principles) -->
 
 <!-- # Submission Requirements
 ## PROGRAM CODE (CREATED INDEPENDENTLY OR COLLABORATIVELY)
@@ -177,7 +177,7 @@ fs = [1,]
 * in general, our design idea is to have multiple lines and buttons on the page, with the results being displayed right to the submit button
 * these math functions meet many of CB's create a task requirements for iteration, selection, sequencing, calling functions, and the use of lists
  -->
-# End of what Ethan and I wrote together for CSP. Here is Anirudh's INDIVIDUAL responses for create task questions.
+<!-- # End of what Ethan and I wrote together for CSP. Here is Anirudh's INDIVIDUAL responses for create task questions.
 
 ## Describes the overall purpose of the program:
 
@@ -356,4 +356,4 @@ This is the actual algorithm the function 'factorial' (which I wrote) uses the g
     }
 ```
 This is the actual algorithm the function 'tri'(which I wrote) uses to generate the area of the triangle with the values of height and base the user inputted. If both the user inputted base and height are positive, then a new variable called 'area' is set equal to the value of the base and height multiplied together and divided by 2. Additionally, 'parseInt' is used to return integer values from the positive user inputs (which previously were stored as strings). Finally, the element 'response' is set equal to the area using document.getElementById. In this whole procedure, an if else statement was used to take care of errors. If the base wasn't greater than zero or the height wasn't greated than zero, then the element 'response' is set equal to a phrase that reminds the user to only enter appropriate values (positive numerial numbers).
-
+ -->
