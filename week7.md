@@ -1,5 +1,9 @@
 {% include navigation.html %}
 
+# [Review Ticket with Study Plan and Reflection](https://github.com/Anirudh123nasty/ARTri3/issues/20#issuecomment-1119263036)
+# [Week 7 Test Corrections](https://anirudh123nasty.github.io/ARTri3/week7) 
+# [AP Exams Week 1 - Proctored MCQ - Quiz 5](https://github.com/Anirudh123nasty/ARTri3/issues/19#issuecomment-1119263917) 
+
 ![image](https://user-images.githubusercontent.com/89223726/166817901-f2334bf7-bb68-44a6-9087-e126c7113214.png)
 # Anirudh Ramachandran, Ms. Naidu, Period 4 Score: 45/50
 
